@@ -7,7 +7,7 @@ import (
 
 func main() {
 	// create todos model
-	todos := models.Todos{}
+	var todos models.Todos
 	// create storage for todos
 	storage := models.NewStorage[models.Todos]("todos.json")
 	// load todos & set auto increment ID
